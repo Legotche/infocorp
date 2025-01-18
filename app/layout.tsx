@@ -1,6 +1,9 @@
 import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import NavBar from "@/components/NavBar";
+import { SpeedInsights } from "@vercel/speed-insights/next"
+import { Analytics } from "@vercel/analytics/react"
+
 import icon from '@/public/icons/favicon.ico'
 import "./globals.css";
 
@@ -32,6 +35,8 @@ export default function RootLayout({
       <body
         className={`${poppins.className} text-[18px] antialiased`}
       >
+        <SpeedInsights />
+        <Analytics />
         <NavBar />
         {children}
       </body>
