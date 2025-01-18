@@ -1,13 +1,13 @@
 import type { Metadata } from "next";
-import {Poppins} from "next/font/google";
+import { Poppins } from "next/font/google";
 import NavBar from "@/components/NavBar";
 import icon from '@/public/icons/favicon.ico'
 import "./globals.css";
 
 const poppins = Poppins({
-  display:"swap",
-  weight:['400','600','900'],
-  subsets:['latin']
+  display: "swap",
+  weight: ['400', '600', '900'],
+  subsets: ['latin']
 })
 
 
@@ -32,7 +32,7 @@ export default function RootLayout({
       <body
         className={`${poppins.className} text-[18px] antialiased`}
       >
-        <NavBar/>
+        <NavBar />
         {children}
       </body>
     </html>
