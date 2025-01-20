@@ -1,10 +1,10 @@
 
 ### Veja o resultado
-https://infocorp-l8f6h94b3-daniels-projects-45e11120.vercel.app/
+infocorp-m9hy9iquj-daniels-projects-45e11120.vercel.app
 
-### Localmente no terminal:
+### Execute localmente no terminal:
 ```bash
-# usando npm
+# usando node package manager
 npm install
 npm run build
 npm run start
