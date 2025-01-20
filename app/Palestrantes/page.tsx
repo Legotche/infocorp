@@ -71,6 +71,7 @@ export default function Palestrantes() {
         },
     ]
 
+    
     const scrollToCard = (index: number) => {
         if (cardContainerRef.current) {
             const cardOffset = 327 * index

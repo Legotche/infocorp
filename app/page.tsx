@@ -1,7 +1,7 @@
 export default function Home() {
   return (
-    <div className="flex justify-center items-center h-[90vh]">
-      <div className="max-w-4xl shadow-2xl  shadow-primary rounded-2xl p-9">
+    <section className="flex items-center min-h-[90vh]">
+      <div className="max-w-4xl shadow-2xl m-auto shadow-primary rounded-2xl p-9 min-w-[400px]">
         <h1 className="text-4xl font-semibold ">Olá!</h1>
         <h2 className="text-2xl font-medium text-primary">
           Bem-vindo ao meu projeto de teste prático da infocorp.
@@ -23,6 +23,6 @@ export default function Home() {
           junto do link para o site já hospedado.
         </p>
       </div>
-    </div>
+    </section>
   );
 }
