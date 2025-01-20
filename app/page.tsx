@@ -1,7 +1,7 @@
 export default function Home() {
   return (
     <div className="flex justify-center items-center h-[90vh]">
-      <div className="max-w-4xl shadow-2xl  shadow-primary motion-reduce:animate-bounce rounded-2xl  p-9">
+      <div className="max-w-4xl shadow-2xl  shadow-primary rounded-2xl p-9">
         <h1 className="text-4xl font-semibold ">Olá!</h1>
         <h2 className="text-2xl font-medium text-primary">
           Bem-vindo ao meu projeto de teste prático da infocorp.

@@ -13,7 +13,7 @@ import phone from '@/public/icons/phone.svg'
 export default function FAQ() {
 
     return (
-        <div className='sm:p-20 p-8 gap-[15px] flex flex-col max-w-[1440px] min-w-[400px] mx-auto'>
+        <section className='sm:p-20 p-8 gap-[15px] flex flex-col max-w-[1440px] min-w-[400px] mx-auto'>
             <div>
                 <div className='w-full flex flex-row gap-[15px] flex-wrap items-center'>
                     <Image src={planta} alt="planta azul" width={29.44} height={60} />
@@ -47,6 +47,6 @@ export default function FAQ() {
                     <p>Você pode nos contatar através de nossa rede social <a href="https://www.instagram.com/siegepan" target="_blank" rel="noopener noreferrer" >instagram.com/siegepan/</a> estaremos prontos para sanar suas dúvidas.</p>
                 </AccordionItem>
             </dl>
-        </div>
+        </section>
     )
 }

@@ -81,12 +81,12 @@ export default function Palestrantes() {
         }
     }
 
-    const nextSlide = () => {
+    const nextCard = () => {
         scrollToCard(currentIndex + 1 < palestrantes.length ? currentIndex + 1 : 0)
         setCurrentIndex((prevIndex) => (prevIndex + 1) % palestrantes.length)
     }
 
-    const prevSlide = () => {
+    const prevCard = () => {
         scrollToCard(
             currentIndex - 1 >= 0 ? currentIndex - 1 : palestrantes.length - 1
         )
@@ -96,7 +96,7 @@ export default function Palestrantes() {
     }
 
     return (
-        <div className="md:p-20 justify-between p-8 flex md:flex-nowrap flex-wrap flex-row max-w-[1440px] min-w-[400px] m-auto">
+        <section className="md:p-20 justify-between p-8 flex md:flex-nowrap flex-wrap flex-row max-w-[1440px] min-w-[400px] m-auto">
             <div className="flex flex-col gap-[15px] max-w-[477px] min-h-[74px] justify-between">
                 <div>
                     <div className="w-full flex flex-row gap-[15px] sm:flex-nowrap flex-wrap items-center">
@@ -111,13 +111,13 @@ export default function Palestrantes() {
                 </div>
                 <div className="flex flex-row gap-[15px]">
                     <button
-                        onClick={prevSlide}
+                        onClick={prevCard}
                         className="w-[72px] h-[74px] rounded-full bg-primary flex items-center justify-center text-background active:bg-background active:text-foreground active:border-[#4444440D] border-2"
                     >
                         {"<"}
                     </button>
                     <button
-                        onClick={nextSlide}
+                        onClick={nextCard}
                         className="w-[72px] h-[74px] rounded-full bg-primary flex items-center justify-center text-background active:bg-background active:text-foreground active:border-[#4444440D] border-2"
                     >
                         {">"}
@@ -140,6 +140,6 @@ export default function Palestrantes() {
                     />
                 ))}
             </div>
-        </div>
+        </section>
     )
 }
