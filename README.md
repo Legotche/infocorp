@@ -1,6 +1,6 @@
 
 ### Veja o resultado
-[link vercel](infocorp-m9hy9iquj-daniels-projects-45e11120.vercel.app)
+[link para a página hospedada na vercel](https://infocorp-m9hy9iquj-daniels-projects-45e11120.vercel.app/))
 
 ### Execute localmente no terminal:
 ```bash
